@@ -1,0 +1,422 @@
+body{
+    overflow-x: hidden; /* Versteckt den horizontalen Scrollbalken */
+}
+
+
+.background-homepage{
+    background-color: rgb(17, 17, 17);
+    height: 100vh;
+}
+
+.background-homepage-white{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.background-homepagee{
+    background-color: rgb(17, 17, 17);
+}
+
+.background-about{
+    background-color: rgb(16, 31, 97);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+
+/* Benutzerdefiniertes CSS für den Scrollbalken */
+::-webkit-scrollbar {
+    width: 12px; /* Breite des Scrollbalkens */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  #2600ff; /* Farbe des Scrollbalken-Griffs */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0); /* Farbe des Hintergrunds des Scrollbalkens */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.about-me-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.about-me-container::before {
+    content: "About Me";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem; /* Kleinere Schriftgröße für den hinteren Text */
+    color: rgba(0, 0, 0, 0.336);
+    z-index: 1;
+}
+
+.about-me {
+    font-size: 2rem;
+    color: #696969;
+    position: relative;
+    z-index: 999;
+}
+
+.about-me::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #2e49e0;
+    margin: 0.2em auto 0;
+}
+
+.oval-background {
+    position: absolute;
+    width: 15vw; /* Die Hälfte der Viewport-Breite für das Halboval */
+    height: 12vh; /* Die volle Viewport-Höhe für das Halboval */
+    background-color: #000000; /* Farbe des Halbovals */
+    border-radius: 0% 100% 100% 0%; /* Hier wird das Halboval erstellt */
+    margin-top: -10%;
+  }
+  .oval-background-otherside{
+  position: absolute;
+    width: 20vw; /* Die Hälfte der Viewport-Breite für das Halboval */
+    height: 12vh; /* Die volle Viewport-Höhe für das Halboval */
+    background-color: #000000; /* Farbe des Halbovals */
+    border-radius: 100% 20% 20% 100%; /* Hier wird das Halboval erstellt */
+    margin-top: 0%;
+    right: 0;
+    z-index: 999;
+  }
+
+  .about-mee-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.about-mee-container::before {
+    content: "Lebenslauf";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem; /* Kleinere Schriftgröße für den hinteren Text */
+    color: rgba(141, 141, 141, 0.336);
+    z-index: 1;
+}
+
+.about-mee {
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 999;
+}
+
+.about-mee::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #2e49e0;
+    margin: 0.2em auto 0;
+}
+
+.progress-bar {
+    width: 0;
+    transition: width 1s;
+  }
+  .card {
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .bottom-diagonal-dashed {
+    position: relative;
+    margin-bottom: 20px;
+}
+.bottom-diagonal-dashed::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, blue 25%, transparent 25%, transparent 50%, blue 50%, blue 75%, transparent 75%, transparent);
+    background-size: 10px 10px; /* Adjust the size for the desired dash effect */
+}
+
+.top-diagonal-dashed {
+    position: relative;
+    margin-bottom: 20px;
+}
+.top-diagonal-dashed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, blue 25%, transparent 25%, transparent 50%, blue 50%, blue 75%, transparent 75%, transparent);
+    background-size: 10px 10px; /* Adjust the size for the desired dash effect */
+}
+
+.about-meee-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.about-meee-container::before {
+    content: "Projekte";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem; /* Kleinere Schriftgröße für den hinteren Text */
+    color: rgb(43, 43, 43);
+    z-index: 1;
+}
+
+.about-meee {
+    font-size: 2rem;
+    color: #696969;
+    position: relative;
+    z-index: 999;
+}
+
+.about-meee::after {
+    content: "";
+    display: block;
+    width: 150%;
+    height: 3px;
+    background-color: #2e49e0;
+    margin: 0.4em auto 0;
+}
+
+.btnn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .btnn-animate {
+    transition: all 0.3s ease;
+  }
+  .btnn-animate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .btnn-animate:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .field label {
+    font-size: 16px;
+    color: #777;
+  }
+
+  input[type="submit"] {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .contact-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.contact-container::before {
+    content: "Contact";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 3rem; /* Kleinere Schriftgröße für den hinteren Text */
+    color: rgb(53, 53, 53);
+    z-index: 1;
+}
+
+.about-meeee {
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 999;
+}
+
+.about-meeee::after {
+    content: "";
+    display: block;
+    width: 150%;
+    height: 3px;
+    background-color: #2e49e0;
+    margin: 0.4em auto 0;
+}
+
+.collapse {
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+.collapsing {
+    transition: max-height 0.5s ease-in;
+    max-height: 0;
+    overflow: hidden;
+}
+.collapse.show {
+    max-height: 500px; /* Adjust as needed for the content */
+}
+
+.navbarbackground{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 255, 0.3); /* Halbtransparentes Blau */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: calc(100% - 200px); /* Verkleinert die Breite von links und rechts */
+    margin: 10px; /* Hinzufügen von Rand um die Navigation */
+    border-radius: 10px; /* Abgerundete Ecken */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: top 0.3s;
+}
+
+@media (max-width: 1800px) {
+    nav {
+        justify-content: flex-start; /* Beispiel: ändert justify-content auf flex-start */
+    }
+}
+
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .big{
+        display: none;
+    }
+
+    .nav-links {
+        backdrop-filter: blur(0px);
+        background-color: rgba(37, 37, 37, 0.95); /* Halbtransparentes Blau */
+        position: absolute;
+        right: -50px;
+        height: 90vh;
+        top: 60px;
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        margin: 20px 10px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.navigationlink:hover{
+    color: #000000;
+}
+
+.navigationlink{
+    transition: color 0.5s easef;
+}
+
+
+/* Animations */
+
+/* Initialer Zustand der Elemente, die animiert werden sollen */
+.from-left, .from-right {
+    opacity: 0;
+    position: relative;
+  }
+  
+  .from-left {
+    left: -300px; /* Startpunkt links außerhalb des Sichtfelds */
+  }
+  
+  .from-right {
+    right: -100px; /* Startpunkt rechts außerhalb des Sichtfelds */
+  }
+  
+  /* Zielzustand der Elemente nach der Animation */
+  .show {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    transition: all 1s ease-in-out; /* Übergangseffekte */
+  }
+  
